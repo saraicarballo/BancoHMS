@@ -84,13 +84,13 @@ public class AltaTarjetaVista extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    String nombreUsuario = nombreTextField.getText();
+                    String nombre = nombreTextField.getText();
                     String numeroTarjeta = numeroTarjetaTextField.getText();
                     String tipoTarjeta = tipoTarjetaTextField.getText();
                     double limiteGasto = Double.parseDouble(limiteGastoTextField.getText());
 
                     AltaTarjetaControlador controlador = new AltaTarjetaControlador();
-                    String resultado = controlador.AltaTarjeta(nombreUsuario, numeroTarjeta, tipoTarjeta, limiteGasto);
+                    String resultado = controlador.AltaTarjeta(nombre, numeroTarjeta, tipoTarjeta, limiteGasto);
                     if (resultado != null) {
                         resultadoTextArea.setText(resultado);
                         errorLabel.setText("");

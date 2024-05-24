@@ -29,8 +29,8 @@ public class Usuario {
 
 	    
 
-		public boolean inicioDeSesion(String nombreUsuario, String contrasena) {
-	        return this.nombre != null && this.nombre.equals(nombreUsuario)
+		public boolean inicioDeSesion(String nombre, String contrasena) {
+	        return this.nombre != null && this.nombre.equals(nombre)
 	        		&& this.contrasena != null && this.contrasena.equals(contrasena);
 	    }
 

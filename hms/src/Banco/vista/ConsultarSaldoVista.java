@@ -20,11 +20,11 @@ public class ConsultarSaldoVista extends JPanel {
         lblConsultarSaldo.setBounds(123, 12, 232, 34);
         add(lblConsultarSaldo);
 
-        JLabel nombreUsuarioLabel = new JLabel("Nombre Usuario:");
-        nombreUsuarioLabel.setVerticalAlignment(SwingConstants.TOP);
-        nombreUsuarioLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        nombreUsuarioLabel.setBounds(73, 61, 130, 17);
-        add(nombreUsuarioLabel);
+        JLabel nombreLabel = new JLabel("Nombre Usuario:");
+        nombreLabel.setVerticalAlignment(SwingConstants.TOP);
+        nombreLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+        nombreLabel.setBounds(73, 61, 130, 17);
+        add(nombreLabel);
 
         nombreTextField = new JTextField();
         nombreTextField.setBounds(215, 57, 114, 19);

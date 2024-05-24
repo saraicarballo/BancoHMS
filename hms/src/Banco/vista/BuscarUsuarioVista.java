@@ -8,7 +8,7 @@ import Banco.controlador.BuscarUsuarioControlador;
 import Banco.controlador.BuscarUsuarioControladorInterfaz;
 
 public class BuscarUsuarioVista extends JPanel {
-    private JTextField nombreUsuarioTextField;
+    private JTextField nombreTextField;
     private JTextArea resultadoTextArea;
 
     public BuscarUsuarioVista() {
@@ -19,16 +19,16 @@ public class BuscarUsuarioVista extends JPanel {
         lblBuscarUsuario.setBounds(123, 12, 232, 34);
         add(lblBuscarUsuario);
 
-        JLabel nombreUsuarioLabel = new JLabel("Nombre:");
-        nombreUsuarioLabel.setVerticalAlignment(SwingConstants.TOP);
-        nombreUsuarioLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        nombreUsuarioLabel.setBounds(73, 61, 60, 17);
-        add(nombreUsuarioLabel);
+        JLabel nombreLabel = new JLabel("Nombre:");
+        nombreLabel.setVerticalAlignment(SwingConstants.TOP);
+        nombreLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+        nombreLabel.setBounds(73, 61, 60, 17);
+        add(nombreLabel);
 
-        nombreUsuarioTextField = new JTextField();
-        nombreUsuarioTextField.setBounds(201, 57, 114, 19);
-        add(nombreUsuarioTextField);
-        nombreUsuarioTextField.setColumns(10);
+        nombreTextField = new JTextField();
+        nombreTextField.setBounds(201, 57, 114, 19);
+        add(nombreTextField);
+        nombreTextField.setColumns(10);
 
         JButton buscarButton = new JButton("Buscar");
         buscarButton.setBounds(166, 100, 117, 25);
@@ -48,7 +48,7 @@ public class BuscarUsuarioVista extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    String nombre = nombreUsuarioTextField.getText();
+                    String nombre = nombreTextField.getText();
                     BuscarUsuarioControladorInterfaz controlador = new BuscarUsuarioControlador();
                     String resultado = controlador.BuscarUsuario(nombre);
                     if (resultado != null) {

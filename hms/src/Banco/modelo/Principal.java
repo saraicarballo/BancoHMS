@@ -40,10 +40,10 @@ public class Principal {
 
 	      ingresar("Maria Gomez", "0987654321", 200.0);
 
-	        // Retirar dinero de una cuenta
+	  
 	     retirar("Juan Perez", "1234567890", 100.0);
 
-	        // Consultar saldo después de retirar
+	   
 	       consultarSaldo("Juan Perez", "1234567890");
 	    }
 	
